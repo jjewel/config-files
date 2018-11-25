@@ -1,4 +1,5 @@
-#Works for version 2.19.windows.1
+#Works from version 2.19.windows.1
+#Checked git version 2.19.2.windows.1
 if test -f /etc/profile.d/git-sdk.sh
 then
 	TITLEPREFIX=SDK-${MSYSTEM#MINGW}
