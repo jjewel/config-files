@@ -11,7 +11,7 @@ if test -f ~/.config/git/git-prompt.sh
 then
 	. ~/.config/git/git-prompt.sh
 else
-	PS1='\[\033]0;$TITLEPREFIX\007\]' # set window title
+	PS1='\[\033]0;${PWD##*/}\007\]' # set window title
 	PS1="$PS1"'\n'                 # new line
 	PS1="$PS1"'\[\033[94m\]'       # change to light blue
 	PS1="$PS1"'\e[2m\u \]'                           # <dim>user<space>
